@@ -1,0 +1,116 @@
+body {
+  /* display: flex; */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  background-color: #e0e0e0; /* Light background */
+}
+
+/* Calculator container */
+.calculator {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Screen styling */
+.screen {
+  background-color: #000;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  border-radius: 10px;
+  height: 80px;
+  box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.calculator-group {
+  width:90%;
+  margin:0 auto;
+}
+.calculator {
+  float: left;
+  margin:0px 10px 10px 0;
+}
+
+/* Buttons layout styling (same as before) */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #d0d0d0;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #bcbcbc;
+  transform: scale(0.98);
+}
+
+/* Special styles for operator buttons */
+#plus,
+#minus,
+#multiply,
+#divide,
+#del, .del, .operator {
+  /* background-color: #ff9500; */
+  background-color: #ff9500;
+  color: white;
+}
+#plus:hover,
+#minus:hover,
+#multiply:hover,
+#divide:hover,
+#del:hover {
+  background-color: orange;
+}
+
+/* Clear and equal buttons */
+#clear, .clear {
+  background-color: #ff3b30;
+  color: white;
+  grid-column: span 2;
+}
+
+#equal, .equal {
+  background-color: #34c759;
+  color: white;
+}
+
+#equal:hover, .equal:hover {
+  background-color: #64d979;
+}
+
+/* Number buttons */
+.button {
+  background-color: #f2f2f2;
+}
+
+/* 0 button spans two columns */
+/* #zero {
+  grid-column: span 2;
+} */
